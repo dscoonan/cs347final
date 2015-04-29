@@ -1,0 +1,135 @@
+DROP SEQUENCE div_seq ; 
+create sequence div_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER div_PK_trig 
+; 
+
+create or replace trigger div_PK_trig 
+before insert on div
+for each row 
+begin 
+select div_seq.nextval into :new.div_id from dual; 
+end; 
+/
+
+DROP SEQUENCE doc_seq ; 
+create sequence doc_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER doc_PK_trig 
+; 
+
+create or replace trigger doc_PK_trig 
+before insert on doc
+for each row 
+begin 
+select doc_seq.nextval into :new.doc_id from dual; 
+end; 
+/
+
+DROP SEQUENCE emp_seq ; 
+create sequence emp_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER emp_PK_trig 
+; 
+
+create or replace trigger emp_PK_trig 
+before insert on emp
+for each row 
+begin 
+select emp_seq.nextval into :new.eid from dual; 
+end; 
+/
+
+DROP SEQUENCE emp_sub_seq ; 
+create sequence emp_sub_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER emp_sub_PK_trig 
+; 
+
+create or replace trigger emp_sub_PK_trig 
+before insert on emp_sub
+for each row 
+begin 
+select emp_sub_seq.nextval into :new.emp_sub_id from dual; 
+end; 
+/
+
+DROP SEQUENCE lab_seq ; 
+create sequence lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER lab_PK_trig 
+; 
+
+create or replace trigger lab_PK_trig 
+before insert on lab
+for each row 
+begin 
+select lab_seq.nextval into :new.lab_id from dual; 
+end; 
+/
+
+DROP SEQUENCE list_seq ; 
+create sequence list_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER list_PK_trig 
+; 
+
+create or replace trigger list_PK_trig 
+before insert on list
+for each row 
+begin 
+select list_seq.nextval into :new.list_id from dual; 
+end; 
+/
+
+DROP SEQUENCE list_sub_seq ; 
+create sequence list_sub_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER list_sub_PK_trig 
+; 
+
+create or replace trigger list_sub_PK_trig 
+before insert on list_sub
+for each row 
+begin 
+select list_sub_seq.nextval into :new.list_sub_id from dual; 
+end; 
+/
+
+DROP INDEX lab_lab_id_FK_0 ;
+CREATE INDEX lab_lab_id_FK_0 ON div(lab_lab_id) ;
+DROP INDEX list_list_id_FK_1 ;
+CREATE INDEX list_list_id_FK_1 ON doc(list_list_id) ;
+DROP INDEX div_div_id_FK_2 ;
+CREATE INDEX div_div_id_FK_2 ON emp(div_div_id) ;
+DROP INDEX emp_eid_FK_3 ;
+CREATE INDEX emp_eid_FK_3 ON emp_sub(emp_eid) ;
+DROP INDEX list_list_id_FK_4 ;
+CREATE INDEX list_list_id_FK_4 ON emp_sub(list_list_id) ;
+DROP INDEX div_div_id_FK_5 ;
+CREATE INDEX div_div_id_FK_5 ON list(div_div_id) ;
+DROP INDEX list_list_id_FK_6 ;
+CREATE INDEX list_list_id_FK_6 ON list_sub(list_list_id) ;
+DROP INDEX list_list_id1_FK_7 ;
+CREATE INDEX list_list_id1_FK_7 ON list_sub(list_list_id1) ;

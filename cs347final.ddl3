@@ -1,0 +1,296 @@
+DROP SEQUENCE div_seq ; 
+create sequence div_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger div_PK_trig 
+before insert on div
+for each row 
+begin 
+select div_seq.nextval into :new.div_id from dual; 
+end; 
+/
+alter table div add created date ; 
+alter table div add created_by VARCHAR2 (255) ; 
+alter table div add row_version_number integer ; 
+alter table div add updated date ; 
+alter table div add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger div_AUD_trig 
+before insert or update on div 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE doc_seq ; 
+create sequence doc_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger doc_PK_trig 
+before insert on doc
+for each row 
+begin 
+select doc_seq.nextval into :new.doc_id from dual; 
+end; 
+/
+alter table doc add created date ; 
+alter table doc add created_by VARCHAR2 (255) ; 
+alter table doc add row_version_number integer ; 
+alter table doc add updated date ; 
+alter table doc add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger doc_AUD_trig 
+before insert or update on doc 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE emp_seq ; 
+create sequence emp_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger emp_PK_trig 
+before insert on emp
+for each row 
+begin 
+select emp_seq.nextval into :new.eid from dual; 
+end; 
+/
+alter table emp add created date ; 
+alter table emp add created_by VARCHAR2 (255) ; 
+alter table emp add row_version_number integer ; 
+alter table emp add updated date ; 
+alter table emp add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger emp_AUD_trig 
+before insert or update on emp 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE emp_sub_seq ; 
+create sequence emp_sub_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger emp_sub_PK_trig 
+before insert on emp_sub
+for each row 
+begin 
+select emp_sub_seq.nextval into :new.emp_sub_id from dual; 
+end; 
+/
+alter table emp_sub add created date ; 
+alter table emp_sub add created_by VARCHAR2 (255) ; 
+alter table emp_sub add row_version_number integer ; 
+alter table emp_sub add updated date ; 
+alter table emp_sub add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger emp_sub_AUD_trig 
+before insert or update on emp_sub 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE lab_seq ; 
+create sequence lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger lab_PK_trig 
+before insert on lab
+for each row 
+begin 
+select lab_seq.nextval into :new.lab_id from dual; 
+end; 
+/
+alter table lab add created date ; 
+alter table lab add created_by VARCHAR2 (255) ; 
+alter table lab add row_version_number integer ; 
+alter table lab add updated date ; 
+alter table lab add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger lab_AUD_trig 
+before insert or update on lab 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE list_seq ; 
+create sequence list_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger list_PK_trig 
+before insert on list
+for each row 
+begin 
+select list_seq.nextval into :new.list_id from dual; 
+end; 
+/
+alter table list add created date ; 
+alter table list add created_by VARCHAR2 (255) ; 
+alter table list add row_version_number integer ; 
+alter table list add updated date ; 
+alter table list add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger list_AUD_trig 
+before insert or update on list 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE list_sub_seq ; 
+create sequence list_sub_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger list_sub_PK_trig 
+before insert on list_sub
+for each row 
+begin 
+select list_sub_seq.nextval into :new.list_sub_id from dual; 
+end; 
+/
+alter table list_sub add created date ; 
+alter table list_sub add created_by VARCHAR2 (255) ; 
+alter table list_sub add row_version_number integer ; 
+alter table list_sub add updated date ; 
+alter table list_sub add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger list_sub_AUD_trig 
+before insert or update on list_sub 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP INDEX lab_lab_id_FK_0 ;
+CREATE INDEX lab_lab_id_FK_0 ON div(lab_lab_id) ;
+DROP INDEX list_list_id_FK_1 ;
+CREATE INDEX list_list_id_FK_1 ON doc(list_list_id) ;
+DROP INDEX div_div_id_FK_2 ;
+CREATE INDEX div_div_id_FK_2 ON emp(div_div_id) ;
+DROP INDEX emp_eid_FK_3 ;
+CREATE INDEX emp_eid_FK_3 ON emp_sub(emp_eid) ;
+DROP INDEX list_list_id_FK_4 ;
+CREATE INDEX list_list_id_FK_4 ON emp_sub(list_list_id) ;
+DROP INDEX div_div_id_FK_5 ;
+CREATE INDEX div_div_id_FK_5 ON list(div_div_id) ;
+DROP INDEX list_list_id_FK_6 ;
+CREATE INDEX list_list_id_FK_6 ON list_sub(list_list_id) ;
+DROP INDEX list_list_id1_FK_7 ;
+CREATE INDEX list_list_id1_FK_7 ON list_sub(list_list_id1) ;
