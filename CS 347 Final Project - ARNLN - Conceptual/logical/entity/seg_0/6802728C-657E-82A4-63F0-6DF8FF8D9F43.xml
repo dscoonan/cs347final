@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6802728C-657E-82A4-63F0-6DF8FF8D9F43" name="div">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:20:35 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Conceptual</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="div_id" id="8DCFCB88-8C46-4618-3A93-5BEC1FE44D72">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:20:41 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="div_name" id="44ACFFC0-FAA8-0020-4A3C-01C2DB82B207">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:21:02 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="lab_id" id="317C7876-B9D5-A99E-0DC7-ACE765D0B4D4">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:27:46 UTC</createdTime>
+<generatorID>A8E84609-27EC-034D-4AAB-8C2601DA1746</generatorID>
+<ownerDesignName>CS 347 Final Project - ARNLN - Conceptual</ownerDesignName>
+<referedAttribute>4F20F9C5-4278-8C1B-E952-BCFFD32C6C74</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5F3A1258-6DCF-B813-92C1-B882261ABD93" name="{entity} PK">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:21:00 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Conceptual</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8DCFCB88-8C46-4618-3A93-5BEC1FE44D72</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

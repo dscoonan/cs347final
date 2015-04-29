@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BA9BCF75-C5BD-5F9B-A22D-A2012427B26D" name="list">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>9F70FCC7-E83B-496C-FE7E-068C5735E3C6</importedID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="list_id" id="9CCB5E5F-3844-3B4D-242B-9F74D0443573">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>C09C0C9B-B307-8F23-93A1-AA0F64BF3DD5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="list_name" id="4726157B-73FA-628A-7B23-0F34E313897F">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>EED32D0F-231C-CFD5-FB65-73B801A7D55A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="list_description" id="091E3B93-62E5-9947-6495-267599558DCC">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>8A9FD7A2-850A-B1E3-B38E-7BF7E0254620</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="ext_name" id="AE94F269-4137-44DD-B5DB-8F3DFB338076">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>2AA43DE5-6164-CD99-3BF7-610B84ADC207</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="list_status" id="C33C7E69-F6D4-622D-9569-0406DF3EE0E5">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>E8A46BCD-DE46-F62D-9AA0-593064B9A7E9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="status_eff_date" id="88D7D86E-6409-9CC7-C26E-047F6D0292A5">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>D80C8948-D751-F07F-ACA7-AA9255BF9DF4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="div_id" id="438769E2-A5B5-57F3-A3FB-360FFB8E6EA6">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-22 17:55:50 UTC</createdTime>
+<generatorID>C063C2B6-DC59-4786-CCC6-1DF390C3B535</generatorID>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<referedAttribute>8DCFCB88-8C46-4618-3A93-5BEC1FE44D72</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A3D60A65-939B-3858-9B4C-EC05168EC8CB" name="{entity} PK">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>130D3291-CBE7-6DA8-D9F6-F656D2D65940</importedID>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9CCB5E5F-3844-3B4D-242B-9F74D0443573</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

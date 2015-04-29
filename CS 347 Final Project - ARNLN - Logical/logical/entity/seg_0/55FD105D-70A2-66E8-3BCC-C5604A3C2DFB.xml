@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="55FD105D-70A2-66E8-3BCC-C5604A3C2DFB" name="emp">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>215B7A85-782D-3FC1-E637-D08DCF079EB1</importedID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="eid" id="3C5C1F9A-D632-6D78-D8DE-A046D88D3702">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>3D5059C7-0190-955D-F911-D1A97A4AFEB6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="ename" id="FF9FFA2B-275D-3715-EACE-6EBFC99DADEE">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>6EE4DAB2-9398-9182-6083-16F5A62AD379</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="status" id="47F402EC-D295-1EA3-A728-340A6B9AC4F1">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>0F9A9200-02E5-9514-C96B-745AD113C218</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="status_eff_date" id="461E8230-8A58-1622-7305-B6B5BB8522E4">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>EE21D16D-FA18-40C1-67B4-76FA8E2F59C6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="is_user" id="DAD8A59E-3F0D-92D1-3F18-056E4C8E8C69">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:28:58 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="is_admin" id="431E7E54-7B63-2A88-FECF-80B7E26F6E63">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 17:30:42 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="div_id" id="35BA8D9E-C2A7-164A-A9D2-66FF8F210C69">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:28:09 UTC</createdTime>
+<generatorID>40984740-0243-81DF-20DB-03860B1E2388</generatorID>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<referedAttribute>8DCFCB88-8C46-4618-3A93-5BEC1FE44D72</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="43DDAA4C-F8B6-4DBC-CEDB-4338FB05AA2D" name="{entity} PK">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:49:20 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<importedID>606FAAE7-191F-8CC0-F641-52ABA8F6E588</importedID>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C5C1F9A-D632-6D78-D8DE-A046D88D3702</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

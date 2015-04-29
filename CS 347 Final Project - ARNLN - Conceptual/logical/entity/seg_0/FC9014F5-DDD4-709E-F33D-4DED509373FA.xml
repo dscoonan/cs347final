@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC9014F5-DDD4-709E-F33D-4DED509373FA" name="lab">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:18:45 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Conceptual</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lab_id" id="4F20F9C5-4278-8C1B-E952-BCFFD32C6C74">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:19:22 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="lab_name" id="CE44E26E-FAAD-3A84-FEDA-49DA27DD29FF">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:19:36 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="42A6F479-285E-4670-94BC-90B8ABCF86D8" name="{entity} PK">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 18:19:33 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Conceptual</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4F20F9C5-4278-8C1B-E952-BCFFD32C6C74</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

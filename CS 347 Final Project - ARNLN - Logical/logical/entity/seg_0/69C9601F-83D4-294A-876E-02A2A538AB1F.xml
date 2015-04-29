@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="69C9601F-83D4-294A-876E-02A2A538AB1F" name="doc">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 17:38:51 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="doc_id" id="CE5E54BE-F51A-804D-25A3-93671DCA23E6">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 17:38:57 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="filename" id="912D72F4-59DB-6D34-39CB-F63CE9C5B956">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 17:39:12 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+</Attribute>
+<Attribute name="file_mimetype" id="0686F441-AAB0-20AD-2B1E-1D96CEBED487">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 17:39:52 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_charset" id="3AF5444D-45A1-DC56-6704-19D57DCF8CEE">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 17:41:03 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_data" id="BE007000-CFD4-5345-0A6B-E9E461846B02">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 17:47:38 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+</Attribute>
+<Attribute name="file_comments" id="7E1DC157-7D90-3EE4-748A-AB426DCBC1B3">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 17:45:29 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="list_id" id="7BF633F9-71FB-6520-7B09-553F6065B599">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 17:49:16 UTC</createdTime>
+<generatorID>B1E95873-F533-059F-BCF3-B129D2F620BA</generatorID>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<referedAttribute>9CCB5E5F-3844-3B4D-242B-9F74D0443573</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="36344B2C-F2EB-758C-A60B-A45C8DBB36C3" name="{entity} PK">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-16 17:39:10 UTC</createdTime>
+<ownerDesignName>CS 347 Final Project - ARNLN - Logical</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CE5E54BE-F51A-804D-25A3-93671DCA23E6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
