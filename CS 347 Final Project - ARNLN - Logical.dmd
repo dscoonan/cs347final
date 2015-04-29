@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CS 347 Final Project - ARNLN - Logical" id="56DF36B8-63E5-02A3-B079-C12EA6687269" version="3.5">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-04-15 21:48:39 UTC</createdTime>
+<ownerDesignName>arlnl-new</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>56DF36B8-63E5-02A3-B079-C12EA6687269</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8C147C79-0305-F6A1-7625-D927F0F8B87B">
+<designStoragePath>C:\Users\Nicholas\Dropbox\School\2015-1-Spring\CS 347\Project\arlnl-logical</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>
